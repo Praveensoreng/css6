@@ -1,0 +1,232 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-image: url(./shara\ desert\ \(1\).jpg);
+}
+.container{
+    width:100vw;
+    height:100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 0.5fr 4fr;
+}
+
+/* header */
+.header{
+    
+    grid-column: 1/-1;
+    display:flex;
+    
+    justify-content:space-between;
+    align-items: center;
+}
+.right-nav{
+    display:flex;
+    
+    justify-content:space-between;
+    column-gap:80px;
+    align-items: center;
+}
+.logo{
+   
+    width:65px;
+    height:65px;
+    padding-left:35px;
+    padding-top: 20px;
+}
+.logo img{
+    width:100%;
+}
+.menu{
+    width:40px;
+    height:40px;
+    cursor:pointer;
+    padding-right:85px;
+    
+}
+.menu img{
+    width:100%;
+}
+.home a{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color:white;
+    
+}
+
+
+
+
+
+
+
+/* main content */
+
+
+
+/* left */
+.left{
+    display:flex;
+    flex-wrap: wrap;
+    column-gap: 65px;
+    row-gap: 15px;
+    
+    justify-content: center;
+    align-items: center;
+
+}
+.photo{
+    width:218px;
+    height:249px;
+    
+}
+
+.desert{
+    background-image: url(./desert.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    margin-left: 0px;
+    cursor:pointer;
+    
+    transition-duration: 0.5s;
+}
+.desert:hover{
+    transform: translateY(-10px);
+}
+.rock{
+    background-image: url(./rock.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    cursor:pointer;
+    transition-duration: 0.5s;
+    margin-right: 0px;
+
+}
+.rock:hover{
+    transform: translateY(-10px);
+}
+.pyramid{
+    background-image: url(./pyramid.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor:pointer;
+    border-radius: 25px;
+    margin-bottom: 100px;
+    transition-duration: 0.5s;
+}
+.pyramid:hover{
+    transform: translateY(-10px);
+}
+.nightsky{
+    background-image: url(./nightsky.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor:pointer;
+    border-radius: 25px;
+    margin-bottom: 100px;
+    transition-duration: 0.5s;
+}
+.nightsky:hover{
+    transform: translateY(-10px);
+}
+.right{
+    display:flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+.sahara{
+    font-size: 125px;
+    font-weight: bold;
+    color: white;
+}
+.info{
+    margin-left: 55px;
+    font-size: 17px;
+    
+    color: white;
+}
+
+ button{
+    height:40px;
+    width:170px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius:23px;
+    border-style: none;
+    cursor:pointer;
+    background-color: white;
+}
+.sub-head{
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+    padding:10px 0px 0px 15px;
+}
+p{
+    font-size: 10px;
+    color:white;
+    padding:0px 0px 0px 15px;
+    line-height: 30px;
+    
+}
+@media (max-width:856px){
+    .container{
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(8,1fr);
+        row-gap: 10px;
+        
+
+    }
+    .left{
+        flex-direction: column;
+        width: 100%;
+    
+    }
+    .desert{
+        background-size: 685px 250px;
+        transition-duration: 0.5s;
+    }
+    .rock{
+        background-size: 685px 250px;
+        transition-duration: 0.5s;
+    }
+    .pyramid{
+        background-size: 685px 250px;
+        margin-bottom: 0px;
+        transition-duration: 0.5s;
+    }
+    .nightsky{
+        background-size: 685px 250px;
+        transition-duration: 0.5s;
+    }
+    .photo{
+        width:80%;
+        height:249px;
+        
+    }
+    .right-nav{
+        column-gap: 20px;
+    }
+    
+    .right{
+        
+        align-items: flex-start;
+        
+    
+    }
+    .sahara{
+        font-size: 70px;
+        margin-left: 55px;
+    }   
+    
+    button{
+        margin-left: 55px;
+    }
+}
